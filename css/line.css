@@ -1,0 +1,52 @@
+h1{
+  font-size: 80px;
+  margin: 30px 0;
+  text-align: center;
+}
+.container .lineReport{
+  margin: 30px 0;
+}
+
+.container .lineReport .lineTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.container .lineReport .lineTitle img{
+  margin-right: 10px;
+}
+
+.container .lineReport .dailyReport h3,
+.container .lineReport .weeklyReport h3{
+  text-align: center;
+  margin: 20px 0;
+}
+.container .lineReport .dailyReport,
+.container .lineReport .weeklyReport{
+  width: 50%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  
+}
+
+.container .lineReport .dailyReport .th,
+.container .lineReport .dailyReport .td{
+  width: 50%;
+  float: left;
+  margin: 15px 0;
+}
+
+.container .lineReport .weeklyReport .th,
+.container .lineReport .weeklyReport .td{
+  width: calc(100% / 3);
+  float: left;
+  margin: 8px 0;
+}
+
+.container .lineReport .dailyReport .th,
+.container .lineReport .dailyReport .td{
+  width: 50%;
+  float: left;
+}

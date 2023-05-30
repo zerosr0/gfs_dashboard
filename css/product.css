@@ -1,0 +1,29 @@
+@charset "uft-8";
+/* table에서 행, 열 title제외한 항목 font-size */
+.content{
+  font-size: 20px;
+}
+/* table에서 규격항목 사이즈 조절 */
+.size{
+  font-size: 16px;
+}
+
+table{
+    margin: 50px; width: 90%;
+    border-spacing: 0; /* 셀간의 여백 제거 */
+    border-collapse: collapse; /* 셀간의 선겹침 허용 */
+}
+th, td{
+    border: 1px solid #666; 
+    text-align: center;
+    font-size: 30px;
+    font-weight:bold;
+    padding: 15px; 
+}
+
+caption{
+    text-align: center;
+    font-size: 80px; font-weight: bold; 
+    color: #eee;
+    margin-bottom: 30px; 
+}
