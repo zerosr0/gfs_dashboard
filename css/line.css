@@ -1,8 +1,3 @@
-h1{
-  font-size: 80px;
-  margin: 30px 0;
-  text-align: center;
-}
 .container .lineReport{
   margin: 30px 0;
 }
@@ -15,6 +10,10 @@ h1{
 }
 .container .lineReport .lineTitle img{
   margin-right: 10px;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  /* 아이콘을 흰색으로 바꿔서 저장하기 */
 }
 
 .container .lineReport .dailyReport h3,
@@ -24,18 +23,18 @@ h1{
 }
 .container .lineReport .dailyReport,
 .container .lineReport .weeklyReport{
-  width: 50%;
+  width: calc(50% - 5px);
   height: 100%;
   float: left;
   text-align: center;
-  
 }
 
 .container .lineReport .dailyReport .th,
 .container .lineReport .dailyReport .td{
-  width: 50%;
+  width: calc(50% - 5px);
   float: left;
-  margin: 15px 0;
+  padding: 15px 0;
+  /* border: 1px solid #eee; */
 }
 
 .container .lineReport .weeklyReport .th,
