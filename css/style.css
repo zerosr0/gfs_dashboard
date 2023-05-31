@@ -1,16 +1,15 @@
 /* reset */
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
 *{ 
   padding: 0; 
   margin: 0; 
   overflow-y: hidden;
-  /* background-color: #000; */
   font-family: 'Nanum Gothic','Nanum Gothic-bold','Nanum Gothic-extrabold', 'Nanum Barun Gothic','Nanum Barun Gothic-bold';
   color: #fff;
 }
 html{
   height: 100vh;
-  background: linear-gradient(3deg, #000 85%, #F68933, #850E11);
+  background: linear-gradient(5deg, #000 85%, #F68933, #850E11);
 }
 .hidden{
   opacity: 0;
@@ -24,18 +23,17 @@ html{
 }
 .container h1{
   font-size: 70px;
+  font-weight: 700;
   position: absolute;
-  top: 60px;
-  background-color: transparent;
+  top: 50px;
+  background: transparent;
   letter-spacing: 3px;
 }
-.import{
-  color: #ff6666;
-}
+
 .logo{
   position: absolute;
-  width: 150px;
-  height: 100px;
+  width: 130px;
+  height: 87px;
   top:40px;
   left:100px;
   z-index: 2;
@@ -50,15 +48,31 @@ html{
   position: absolute;
   width: 400px;
   top: 80px;
-  right: 100px;
+  right: 60px;
   z-index: 2;
   text-align: center;
-  border-radius: 20px;
-  background-color: rgb(255, 255, 255,0.5);
+  border-radius: 30px;
+  background: rgb(255, 255, 255, 0.5);
 }
 .today span{
   display: inline-block;
   font-size: 25px;
-  background-color: transparent;
-  margin: 10px;
+  background: transparent;
+  margin: 10px 20px;
+}
+
+/* 실적, 차이, 달성률 컬러  */
+/*
+.target{
+  color:#33ccff;
+}
+*/
+.product{
+  color:#ffff66;
+}
+.diff{
+  color: #ff6666;
+}
+.achivement{
+  color: #99ff66;
 }

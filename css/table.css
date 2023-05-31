@@ -4,25 +4,29 @@ table{
     width: 95%;
     border-spacing: 0; /* 셀간의 여백 제거 */
     border-collapse: collapse; /* 셀간의 선겹침 허용 */
-}
+    background: #191919;
+    font-weight: bold;
 
+}
+thead{ 
+  border-top: 2px solid #000; 
+}
+thead th{ 
+    border-bottom: 1px solid #000;
+}
+thead .point{
+  background: rgb(246, 137, 51,0.5);
+}
 th, td{
-    border: 1px solid #666; 
+    border: 1px solid #000; 
     text-align: center;
     font-size: 30px;
     font-weight: bold;
-    padding: 15px 30px; 
+    padding: 20px 30px; 
 }
-thead{ 
-  border-top: 2px solid #666; 
+tfoot{ 
+  font-size: 35px;
 }
-thead th{ 
-    border-bottom: 1px solid #666;
-}
-th{ 
-  background-color: rgba(237, 237, 237,0.2); 
-}
-
 td{
   color: #fff;
 }
