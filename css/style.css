@@ -4,12 +4,12 @@
   padding: 0; 
   margin: 0; 
   overflow-y: hidden;
-  font-family: 'Nanum Gothic','Nanum Gothic-bold','Nanum Gothic-extrabold', 'Nanum Barun Gothic','Nanum Barun Gothic-bold';
+  font-family: 'Nanum Gothic';
   color: #fff;
 }
 html{
   height: 100vh;
-  background: linear-gradient(5deg, #000 85%, #F68933, #850E11);
+  background: linear-gradient(5deg, #121415 85%, #F68933, #850E11);
 }
 .hidden{
   opacity: 0;
@@ -64,11 +64,11 @@ html{
 /* 실적, 차이, 달성률 컬러  */
 /*
 .target{
-  color:#33ccff;
+  color:#ffff66;
 }
 */
 .product{
-  color:#ffff66;
+  color:#33ccff;
 }
 .diff{
   color: #ff6666;

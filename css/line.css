@@ -1,51 +1,94 @@
-.container .lineReport{
-  margin: 30px 0;
+.lineReport{
+  width: 30%;
+  height: 100%;
 }
 
-.container .lineReport .lineTitle{
+.lineReport .lineTitle{
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 0;
 }
-.container .lineReport .lineTitle img{
+
+.lineReport .lineTitle img{
   margin-right: 10px;
   color: #fff;
   width: 20px;
   height: 20px;
   /* 아이콘을 흰색으로 바꿔서 저장하기 */
 }
+.lineReport .dailyReport,
+.lineReport .weeklyReport{
+  width: 48%;
+  height: 80%;
+  float: left;
+  text-align: center;
+  background: #191919;
+}
+.lineReport .dailyReport{
+  margin-right: 1%;
+}
 
-.container .lineReport .dailyReport h3,
-.container .lineReport .weeklyReport h3{
+table{
+  border-collapse: collapse;
+}
+th, td{
+  border: 1px solid #000;
+}
+.lineReport .dailyReport tr,
+.lineReport .weeklyReport tr{
+  height: 50px;
+}
+.lineReport .dailyReport caption,
+.lineReport .weeklyReport caption{
   text-align: center;
   margin: 20px 0;
 }
-.container .lineReport .dailyReport,
-.container .lineReport .weeklyReport{
-  width: calc(50% - 5px);
-  height: 100%;
-  float: left;
-  text-align: center;
-}
 
-.container .lineReport .dailyReport .th,
-.container .lineReport .dailyReport .td{
-  width: calc(50% - 5px);
+.lineReport .dailyReport th,
+.lineReport .dailyReport td{
+  width: 130px;
   float: left;
   padding: 15px 0;
   /* border: 1px solid #eee; */
 }
 
-.container .lineReport .weeklyReport .th,
-.container .lineReport .weeklyReport .td{
-  width: calc(100% / 3);
-  float: left;
+.lineReport .weeklyReport th,
+.lineReport .weeklyReport td{
+  width: 30%;
   margin: 8px 0;
 }
 
-.container .lineReport .dailyReport .th,
-.container .lineReport .dailyReport .td{
+.graph{
+  position: relative;
   width: 50%;
-  float: left;
+  height: 100%;
+}
+/*
+.graph .axis_y {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 100%;
+  font-size: 12px;
+  color: #4a4a4a;
+}
+*/
+.graph .axis_x{
+  display:flex;
+  justify-content:center;
+  position:relative;
+  padding:0;
+  box-sizing:border-box;
+  height:100%;
+  border-bottom:1px solid #d3d3d3;
+  .item{
+    flex:1;
+    position:relative;
+  }
 }
