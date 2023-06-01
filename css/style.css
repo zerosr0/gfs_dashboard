@@ -9,7 +9,8 @@
 }
 html{
   height: 100vh;
-  background: linear-gradient(5deg, #121415 85%, #F68933, #850E11);
+  /* background: linear-gradient(5deg, #121415 85%, #F68933, #850E11); */
+  background: #121415;
 }
 .hidden{
   opacity: 0;
@@ -71,7 +72,7 @@ html{
   color:#33ccff;
 }
 .diff{
-  color: #ff6666;
+  color: #ff3333;
 }
 .achivement{
   color: #99ff66;

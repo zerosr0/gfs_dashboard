@@ -18,6 +18,14 @@ th, td{
 table tr:nth-of-type(even){
   background: rgb(136, 136, 136, 0.2);
 }
+
+th{
+    background: rgb(52, 82, 245, 0.5);
+}
+td{
+  font-weight: bolder;
+}
+
 .right{
   text-align: right;
 }
@@ -26,8 +34,9 @@ thead{
 }
 thead th{ 
     border-bottom: 1px solid #000;
-    color: #ffd700;
+    color: #fff;
 }
 tfoot{ 
   font-size: 35px;
+  background: rgb(52, 82, 245, 0.5);
 }
