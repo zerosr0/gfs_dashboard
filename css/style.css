@@ -9,8 +9,8 @@
 }
 html{
   height: 100vh;
-  /* background: linear-gradient(5deg, #121415 85%, #F68933, #850E11); */
-  background: #121415;
+  background: linear-gradient(5deg, #121415 85%, #F68933, #850E11);
+  /*background: #121415;*/
 }
 .hidden{
   opacity: 0;

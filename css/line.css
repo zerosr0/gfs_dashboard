@@ -1,59 +1,42 @@
 .lineReport{
-  width: 30%;
-  height: 98%;
-  margin-right: 1%;
+  width: 29%;
+  height: 96%;
+  margin-right: 2%;
   margin-bottom: 1%;
-  border: 2px solid #3452F5;
+  border: 1px solid #3452f5;
+  padding: 20px;
+}
+.lineReport:nth-of-type(3n){
+  margin-right: 0;
 }
 .lineReport .lineTitle{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
-  margin: 20px 0;
+  font-size: 20px;
+  margin-bottom: 10px;
+  width: 550px;
+  height: 45px;
+  border-radius:30px;
+  background:  rgb(52, 82, 245, 0.5);
+  float: left;
+  text-align: center;
 }
 .lineReport .lineTitle i{
-  margin-right: 10px;
+  margin-right: 15px;
   font-size: 30px;
 }
 .lineReport .dailyReport,
 .lineReport .weeklyReport{
-  width: 55%;
+  width: 52%;
   height: 80%;
   float: left;
   text-align: center;
   background: #191919;
 }
 .lineReport .dailyReport{
-  width: 42%;
-  margin-right: 1%;
-}
-table{
-  border-collapse: collapse;
-  font-weight: 700;
-}
-th, td{
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-  font-size: 20px;
-  /* font-weight: 700; */
-}
-td{
-  font-size: 25px;
-}
-
-
-.lineReport .dailyReport .caption,
-.lineReport .weeklyReport .caption{
-  text-align: center;
-  margin: 10px 0;
-  font-size: 20px;
- /* background: rgb(52, 82, 245, 0.5);/ */
-}
-.lineReport .dailyReport th,
-.lineReport .dailyReport td{
-  padding: 20px;
-
+  width: 45%;
+  margin-right: 3%;
 }
 .lineReport .weeklyReport{
   margin-bottom: 20px;
@@ -66,7 +49,27 @@ td{
   width: 30%;
   padding: 5px 0;
 }
-
+table{
+  border-collapse: collapse;
+  font-weight: 700;
+}
+th, td{
+  border: 1px solid #000;
+  font-size: 18px;
+  padding: 15px;
+}
+th{
+  background: rgb(136, 136, 136, 0.2);
+}
+td{
+  font-size: 22px;
+}
+.caption{
+  text-align: center;
+  margin: 10px 0;
+  font-size: 20px;
+  background: rgb(52, 82, 245, 0.2);
+}
 .graph{
   width: 50%;
 }
@@ -78,10 +81,38 @@ td{
   box-sizing:border-box;
   border-bottom:1px solid #d3d3d3;
 }
-.graph .axis_x .item button{
-  height: 88%;
-}
 .graph .axis_x .item{
   flex:1;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.graph .axis_x .item .data1{
+  width: 40px;
+  height: 90%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.graph .axis_x .item .data2{
+  width: 40px;
+  height: 45%;
+  background: #33ccff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.graph .axis_x .item .volume{
+  font-size: 12px;
+}
+.graph .axis_x .item .blind{
+  color: #000;
+  font-size: 15px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+.graph .axis_x .data1{
+  height: 88%;
 }
